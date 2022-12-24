@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE ⚡ html>
 <html lang="en">
 
 <head>
@@ -46,7 +46,9 @@
     @keyframes -amp-start {
         from { visibility:hidden } to { visibility:visible }
     }
-
+    </style>
+    <noscript>
+    <style amp-boilerplate>
     * {
   margin: 0;
   padding: 0;
@@ -435,18 +437,17 @@
     text-align: center;
   }
 }
-
-  </style>
-    <noscript>
-        <style amp-boilerplate>
-            body {
-                -webkit-animation:none;
-                -moz-animation:none;
-                -ms-animation:none;
-                animation:none
-            }
-        </style>
-    </noscript>
+    </style>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation:none;
+        -moz-animation:none;
+        -ms-animation:none;
+        animation:none
+      }
+    </style>
+  </noscript>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
@@ -474,7 +475,7 @@
                     <h1>Discover the world of awesome</h1>
                     <h1><b>free PSD templates</b></h1>
                 </div>
-                <form class="title__registration registration" method="POST">
+                <form class="title__registration registration" method="POST" action-xhr="https://example.com/subscribe">
                     <input type="email" placeholder="EMAIL" name="email">
                     <input type="password" placeholder="PASSWORD" name="password">
                     <input type="submit" value="REGISTER">
